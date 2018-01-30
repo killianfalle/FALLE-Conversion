@@ -1,0 +1,26 @@
+/**
+ * @(#)Conversion.java
+ *
+ *
+ * @author 
+ * @version 1.00 2017/10/25
+ */
+import javax.swing.JOptionPane;
+public class Conversion {
+	
+    public static void main(String[] args) {
+    	int NoOfSeconds, Hours, Minutes, extra, Seconds;
+    	
+    NoOfSeconds = Integer.parseInt(JOptionPane.showInputDialog("Enter Number of Seconds: "));
+    	Hours = NoOfSeconds/3600;
+    	extra = NoOfSeconds%3600;
+    	
+    	Minutes = extra/60;
+    	Seconds = extra%60;
+    	
+    	
+    	JOptionPane.showMessageDialog(null, NoOfSeconds + " Second/s \n" + Hours + " Hour/s \n" + Minutes + " Minute/s \n" + Seconds + " Second/s");
+    	
+ 
+    }
+}
